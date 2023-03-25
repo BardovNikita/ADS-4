@@ -33,12 +33,12 @@ int countPairs3(int *arr, int len, int value) {
          while (arr[i] + arr[newmid] == value) {
            count += 1;
            newmid += 1;
-	 }
+         }
          newmid = mid - 1;
          while (arr[i] + arr[newmid] == value) {
            count += 1;
            newmid -= 1;
-	 }
+         }
          break;
        }
        if (arr[i] + arr[mid] > value) {
